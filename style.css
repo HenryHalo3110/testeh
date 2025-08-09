@@ -1,3 +1,113 @@
+body {
+    background-color: #1c1d24;
+    color: #ffffff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Imagem pequena no header */
+.small-img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Menu */
+.nav-link {
+    background-color: #0c0d13;
+    color: #ffffff !important;
+    margin: 0 5px;
+    border-radius: 8px;
+    padding: 8px 15px !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: #2a2c3a;
+}
+
+/* Linha divisória */
+.divider {
+    border: none;
+    border-top: 1px solid #ffffff;
+    margin: 5px auto 0 auto;
+    width: 100%;
+}
+
+/* Imagem grande */
+.large-img {
+    display: block;
+    margin: 20px auto 0 auto;
+    max-width: 80%;
+    border: 3px solid #7b1717;
+}
+
+/* Sessão horror circus */
+.secao-horror-circus {
+    position: relative;
+    padding: 4rem 2rem;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+/* Imagem de fundo da seção (transparente para não atrapalhar texto) */
+.imagem-fundo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    opacity: 0.15;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+}
+
+/* Conteúdo sobre a imagem */
+.conteudo {
+    position: relative;
+    z-index: 10;
+    gap: 1rem; /* menor espaço entre imagem e texto */
+    align-items: flex-start; /* Alinha ao topo */
+}
+
+/* Imagem pequena à esquerda da seção - maior */
+.imagem-pequena img {
+    max-width: 280px; /* aumentado */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Texto da seção */
+.texto {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    margin-left: 0; /* tira margem lateral extra */
+    padding-left: 0; /* tira padding lateral extra */
+}
+
+.texto h2 {
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.texto .sinopse {
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 1.15rem;
+    color: white;
+    
+    text-align: center; 
+    margin: 0 auto;     
+}
+
 /* Sessão Support Us */
 .secao-support-us {
   color: white;
@@ -25,6 +135,8 @@
 
 .secao-support-us .imagem-su {
   max-width: 200px;
+  width: 100%;
+  max-width: 200px; /* para manter limite máximo */
   cursor: pointer;
   transition: transform 0.3s ease;
   border-radius: 12px;
@@ -40,4 +152,5 @@
   margin: 0 auto;
   color: #ddd;
   margin-top: 1.5rem;
+  line-height: 1.5;
 }
