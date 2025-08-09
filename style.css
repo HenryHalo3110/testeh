@@ -180,3 +180,62 @@ body {
 #art-gallery img:hover {
   transform: scale(1.05);
 }
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  flex-direction: column;
+  user-select: none;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  margin: 0 50px;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  user-select: none;
+  padding: 0 15px;
+  transition: color 0.2s ease;
+}
+
+.lightbox-close {
+  top: 20px;
+  right: 30px;
+  font-size: 4rem;
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  color: #ff4444;
+}
+
+.lightbox-prev {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.lightbox-next {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
