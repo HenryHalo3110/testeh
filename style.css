@@ -1,0 +1,43 @@
+/* Sessão Support Us */
+.secao-support-us {
+  color: white;
+  background-color: #1c1e2a; /* tom escuro para destacar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.secao-support-us .titulo-su {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 0.3rem;
+  color: white;
+}
+
+.secao-support-us .subtexto-su {
+  font-size: 1.25rem;
+  color: #999999;
+  margin-bottom: 1.5rem;
+}
+
+.secao-support-us .imagem-su {
+  max-width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+}
+
+.secao-support-us .imagem-su:hover {
+  transform: scale(1.05);
+}
+
+.secao-support-us .texto-final-su {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ddd;
+  margin-top: 1.5rem;
+}
