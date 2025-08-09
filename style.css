@@ -156,3 +156,27 @@ body {
     color: #ddd;
     line-height: 1.5;
 }
+
+.titulo-galeria {
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: white;
+}
+
+#art-gallery {
+  background-color: #1c1e2a;
+  color: white;
+}
+
+#art-gallery img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#art-gallery img:hover {
+  transform: scale(1.05);
+}
