@@ -110,47 +110,49 @@ body {
 
 /* Sessão Support Us */
 .secao-support-us {
-  color: white;
-  background-color: #1c1e2a; /* tom escuro para destacar */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 3rem 1rem;
+    background-color: #1c1e2a; /* Fundo escuro */
+    color: #fff;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .secao-support-us .titulo-su {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 0.3rem;
-  color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    color: #fff;
 }
 
 .secao-support-us .subtexto-su {
-  font-size: 1.25rem;
-  color: #999999;
-  margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    color: #999;
+    margin-bottom: 2rem;
+}
+
+.secao-support-us .link-suporte {
+    display: inline-block;
 }
 
 .secao-support-us .imagem-su {
-  max-width: 200px;
-  width: 100%;
-  max-width: 200px; /* para manter limite máximo */
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  border-radius: 12px;
+    max-width: 200px;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .secao-support-us .imagem-su:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .secao-support-us .texto-final-su {
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto;
-  color: #ddd;
-  margin-top: 1.5rem;
-  line-height: 1.5;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 1.5rem auto 0 auto;
+    color: #ddd;
+    line-height: 1.5;
 }
