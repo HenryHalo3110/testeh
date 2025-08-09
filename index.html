@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Horror Circus</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="p-3">
+        <div class="container d-flex align-items-center">
+            <!-- Imagem pequena -->
+            <a href="#">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/105387059_BPw4M3Ykvnzuj7E.png" alt="Imagem pequena" class="small-img me-4" />
+            </a>
+
+            <!-- Menu alinhado à direita -->
+            <nav class="ms-auto">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#horror-circus">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#support-us">Support Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Art Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Linha branca -->
+        <hr class="divider" />
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container text-center my-4">
+        <!-- Imagem grande -->
+        <a href="#">
+            <img src="https://i.pinimg.com/1200x/56/24/dc/5624dc46f817a3b0d03dfa546c9e1bcf.jpg" alt="Imagem grande" class="large-img" />
+        </a>
+    </main>
+
+    <!-- Sessão da sinopse com imagem fundo -->
+    <section id="horror-circus" class="secao-horror-circus" tabindex="0" aria-label="Seção sinopse sobre Horror Circus">
+        <div class="container position-relative">
+            <!-- Imagem de fundo centralizada -->
+            <img 
+                src="https://i.pinimg.com/1200x/56/24/dc/5624dc46f817a3b0d03dfa546c9e1bcf.jpg" 
+                alt="" 
+                class="imagem-fundo" 
+                aria-hidden="true" 
+            />
+
+            <!-- Conteúdo flexível: imagem pequena + texto -->
+            <div class="d-flex align-items-center conteudo">
+                <!-- Imagem pequena à esquerda -->
+                <div class="imagem-pequena">
+                    <img
+                        src="https://f2.toyhou.se/file/f2-toyhou-se/images/105387059_BPw4M3Ykvnzuj7E.png"
+                        alt="Imagem relacionada ao Horror Circus"
+                        loading="lazy"
+                    />
+                </div>
+
+                <!-- Texto à direita -->
+                <div class="texto ms-4">
+                    <h2>WHAT IS HORROR CIRCUS?</h2>
+                    <p class="sinopse">
+                      No one quite remembers when the Circus arrived. It simply appeared in a clearing that didn’t exist before, wrapped in mist, distorted music, and broken smiles. But everyone who entered... never came out the same. Horror Circus is a twisted carnival where shadows hide unspeakable horrors and the laughter masks madness. Step inside to face eerie performers, haunting shows, and secrets that blur the line between reality and nightmare.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão Support Us -->
+    <section id="support-us" class="secao-support-us text-center py-5" tabindex="0" aria-label="Seção Support Us">
+        <div class="container">
+            <h2 class="titulo-su">Support Us!</h2>
+            <p class="subtexto-su">Help us build Horror Circus!</p>
+            <a href="https://ko-fi.com/henryhalo" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn.ko-fi.com/cdn/kofi2.png?v=3" alt="Ko-fi Support Button" class="imagem-su" />
+            </a>
+            <p class="texto-final-su mt-4">
+                Your support helps us keep creating terrifying fun experiences. Every donation counts and means a lot!
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
