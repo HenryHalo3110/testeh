@@ -162,20 +162,7 @@ body {
 }
 
 /* Galeria */
-.titulo-galeria {
-  font-weight: 900;
-  font-size: 2.8rem;
-  color: white;
-  font-family: "Arial Black", Arial, sans-serif; /* títulos com Arial Black */
-}
-
-#art-gallery {
-  background-color: #1c1d24;
-  color: white;
-  font-family: "Courier New", Courier, monospace; /* texto com Courier New */
-}
-
-#art-gallery img {
+#art-gallery img.gallery-img {
   width: 100%;
   object-fit: cover;
   border-radius: 12px;
@@ -184,7 +171,7 @@ body {
   cursor: pointer;
 }
 
-#art-gallery img:hover {
+#art-gallery img.gallery-img:hover {
   transform: scale(1.05);
 }
 
@@ -207,6 +194,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 20px black;
   margin: 0 50px;
+  object-fit: contain;
 }
 
 .lightbox-close,
