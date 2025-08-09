@@ -2,7 +2,7 @@ body {
     background-color: #1c1d24;
     color: #ffffff;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Courier New", Courier, monospace; /* Fonte para textos */
 }
 
 /* Imagem pequena no header */
@@ -20,6 +20,7 @@ body {
     padding: 8px 15px !important;
     font-weight: bold;
     text-align: center;
+    font-family: "Courier New", Courier, monospace; /* manter coerência */
 }
 
 .nav-link:hover {
@@ -89,6 +90,7 @@ body {
     text-align: center;
     margin-left: 0; /* tira margem lateral extra */
     padding-left: 0; /* tira padding lateral extra */
+    font-family: "Courier New", Courier, monospace; /* texto com Courier New */
 }
 
 .texto h2 {
@@ -96,6 +98,7 @@ body {
     font-size: 2.8rem;
     margin-bottom: 1rem;
     color: white;
+    font-family: "Arial Black", Arial, sans-serif; /* títulos com Arial Black */
 }
 
 .texto .sinopse {
@@ -103,7 +106,6 @@ body {
     line-height: 1.6;
     font-size: 1.15rem;
     color: white;
-    
     text-align: center; 
     margin: 0 auto;     
 }
@@ -118,6 +120,7 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    font-family: "Courier New", Courier, monospace; /* texto com Courier New */
 }
 
 .secao-support-us .titulo-su {
@@ -125,6 +128,7 @@ body {
     font-weight: 900;
     margin-bottom: 0.5rem;
     color: #fff;
+    font-family: "Arial Black", Arial, sans-serif; /* títulos com Arial Black */
 }
 
 .secao-support-us .subtexto-su {
@@ -157,15 +161,18 @@ body {
     line-height: 1.5;
 }
 
+/* Galeria */
 .titulo-galeria {
   font-weight: 900;
   font-size: 2.8rem;
   color: white;
+  font-family: "Arial Black", Arial, sans-serif; /* títulos com Arial Black */
 }
 
 #art-gallery {
   background-color: #1c1e2a;
   color: white;
+  font-family: "Courier New", Courier, monospace; /* texto com Courier New */
 }
 
 #art-gallery img {
