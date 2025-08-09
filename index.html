@@ -73,7 +73,6 @@
         </div>
     </section>
 
-<section id="art-gallery" ...>
 <!-- Sessão Support Us -->
 <section id="support-us" class="secao-support-us text-center py-5" tabindex="0" aria-label="Seção Support Us">
     <div class="container">
@@ -88,25 +87,32 @@
     </div>
 </section>
 
+<section id="art-gallery" ...>
 <section id="art-gallery" tabindex="0" aria-label="Seção de galeria de arte">
   <div class="container text-center py-5">
     <h2 class="titulo-galeria mb-4">Art Gallery</h2>
     <div class="row justify-content-center g-4">
-      <!-- Coluna esquerda -->
       <div class="col-md-4 d-flex flex-column gap-4">
-        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 1" class="img-fluid rounded-4 shadow" loading="lazy" />
-        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 2" class="img-fluid rounded-4 shadow" loading="lazy" />
-        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 3" class="img-fluid rounded-4 shadow" loading="lazy" />
+        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 1" class="img-fluid rounded-4 shadow galeria-img" loading="lazy" data-index="0" />
+        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 2" class="img-fluid rounded-4 shadow galeria-img" loading="lazy" data-index="1" />
+        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 3" class="img-fluid rounded-4 shadow galeria-img" loading="lazy" data-index="2" />
       </div>
-      <!-- Coluna direita -->
       <div class="col-md-4 d-flex flex-column gap-4">
-        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 4" class="img-fluid rounded-4 shadow" loading="lazy" />
-        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 5" class="img-fluid rounded-4 shadow" loading="lazy" />
-        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 6" class="img-fluid rounded-4 shadow" loading="lazy" />
+        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 4" class="img-fluid rounded-4 shadow galeria-img" loading="lazy" data-index="3" />
+        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 5" class="img-fluid rounded-4 shadow galeria-img" loading="lazy" data-index="4" />
+        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 6" class="img-fluid rounded-4 shadow galeria-img" loading="lazy" data-index="5" />
       </div>
     </div>
   </div>
 </section>
+
+<!-- Lightbox Overlay -->
+<div id="lightbox" class="lightbox" style="display:none;">
+  <button class="lightbox-close" aria-label="Fechar">&times;</button>
+  <button class="lightbox-prev" aria-label="Imagem anterior">&#10094;</button>
+  <img class="lightbox-img" src="" alt="Imagem ampliada" />
+  <button class="lightbox-next" aria-label="Próxima imagem">&#10095;</button>
+</div>
 
 </body>
 </html>
