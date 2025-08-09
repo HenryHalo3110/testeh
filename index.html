@@ -88,31 +88,40 @@
 </section>
 
 <!-- Sessão Art Gallery -->
-<section id="art-gallery" tabindex="0" aria-label="Seção de galeria de arte">
-  <div class="container text-center py-5">
-    <h2 class="titulo-galeria mb-4">Art Gallery</h2>
-    <div class="row justify-content-center g-4">
-      <div class="col-md-4 d-flex flex-column gap-4">
-        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 1" class="img-fluid rounded-4 shadow galeria-img" loading="lazy" data-index="0" />
-        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 2" class="img-fluid rounded-4 shadow galeria-img" loading="lazy" data-index="1" />
-        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 3" class="img-fluid rounded-4 shadow galeria-img" loading="lazy" data-index="2" />
+<section id="art-gallery" tabindex="0" aria-label="Galeria de arte">
+  <h2 class="titulo-galeria text-center pt-5">Art Gallery</h2>
+  <div class="container p-3 mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-3">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101109707_5X7OOOtY4WQ9Qnx.png" alt="Imagem 1" class="gallery-img" data-index="0" />
       </div>
-      <div class="col-md-4 d-flex flex-column gap-4">
-        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 4" class="img-fluid rounded-4 shadow galeria-img" loading="lazy" data-index="3" />
-        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 5" class="img-fluid rounded-4 shadow galeria-img" loading="lazy" data-index="4" />
-        <img src="https://i.pinimg.com/736x/bf/5f/ce/bf5fce25f7ee5fafeb00bbac63b8e576.jpg" alt="Imagem 6" class="img-fluid rounded-4 shadow galeria-img" loading="lazy" data-index="5" />
+      <div class="col-md-4 mb-3">
+        <img src="https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png" alt="Imagem 2" class="gallery-img" data-index="1" />
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101108566_YTPqmzgINHIKUHX.png" alt="Imagem 3" class="gallery-img" data-index="2" />
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101109425_f6HFZvEpZdhIVvj.png" alt="Imagem 4" class="gallery-img" data-index="3" />
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="https://i.pinimg.com/originals/68/33/ff/6833ff27352a6e031b9ec9b70c11605e.jpg" alt="Imagem 5" class="gallery-img" data-index="4" />
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="https://i.pinimg.com/originals/9b/17/12/9b171239cebcf8405a46a324a83ed9f7.jpg" alt="Imagem 6" class="gallery-img" data-index="5" />
       </div>
     </div>
   </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" style="display:none;">
+    <button class="lightbox-close" aria-label="Fechar">&times;</button>
+    <button class="lightbox-prev" aria-label="Imagem anterior">&#10094;</button>
+    <img src="" alt="" class="lightbox-img" />
+    <button class="lightbox-next" aria-label="Próxima imagem">&#10095;</button>
+  </div>
 </section>
 
-<!-- Lightbox Overlay -->
-<div id="lightbox" class="lightbox" style="display:none;">
-  <button class="lightbox-close" aria-label="Fechar">&times;</button>
-  <button class="lightbox-prev" aria-label="Imagem anterior">&#10094;</button>
-  <img class="lightbox-img" src="" alt="Imagem ampliada" />
-  <button class="lightbox-next" aria-label="Próxima imagem">&#10095;</button>
-</div>
 
 </body>
 </html>
