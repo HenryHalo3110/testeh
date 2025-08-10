@@ -151,75 +151,49 @@
         }
 </script>
 
-<!-- Seção Personagens -->
-<section id="characters">
-  <h2 class="titulo-galeria">CHARACTERS</h2>
-  <div class="personagens-grid">
-    <div class="personagem-card" onclick="abrirPersonagem(0)">
-      <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/80203018_OfueflQsHXa4WFy.png" alt="Devish">
-      <h3>Devish</h3>
+<!--- personagens ---!>
+<section id="characters" tabindex="0" aria-label="Galeria de personagens">
+  <h2 class="titulo-galeria text-center pt-5">Characters</h2>
+  <div class="container p-3 mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-3 mb-3" onclick="abrirPopup(1)">
+        <img src="https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png" 
+             alt="Imagem 1" class="gallery-img img-fluid rounded-3" data-index="0" />
+      </div>
+      <div class="col-md-3 mb-3" onclick="abrirPopup(2)">
+        <img src="https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png" 
+             alt="Imagem 2" class="gallery-img img-fluid rounded-3" data-index="1" />
+      </div>
     </div>
-    <div class="personagem-card" onclick="abrirPersonagem(1)">
-      <img src="personagem2.jpg" alt="Vouliber">
-      <h3>Vouliber</h3>
-    </div>
-    <div class="personagem-card" onclick="abrirPersonagem(2)">
-      <img src="personagem3.jpg" alt="Mayhem">
-      <h3>Mayhem</h3>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup-bg" id="popup-bg" onclick="fecharPopup(event)">
+    <div class="popup-img" id="popup-img">
+      <button class="popup-close" onclick="fecharPopup(event)">&times;</button>
+      <img id="popup-img-src" src="" alt="Imagem ampliada">
     </div>
   </div>
 </section>
 
-<!-- Modal Personagens -->
-<div id="modalPersonagem" class="modal">
-  <div class="modal-conteudo">
-    <span class="fechar" onclick="fecharPersonagem()">&times;</span>
-    <div class="modal-esquerda">
-      <img id="https://f2.toyhou.se/file/f2-toyhou-se/images/80203018_OfueflQsHXa4WFy.png" src="" alt="">
-    </div>
-    <div class="modal-direita">
-      <h2 id="DEVISH (DEVIL-ON-WISH)!"></h2>
-      <p id="texto texto texto"></p>
-    </div>
-  </div>
-</div>
-
 <script>
-const personagens = [
-  {
-    nome: "Devish",
-    img: "https://f2.toyhou.se/file/f2-toyhou-se/images/105407758_kkyUejMZU1H2Li3.png",
-    descricao: "textetextext"
-  },
-  {
-    nome: "Hachiware",
-    img: "personagem2.jpg",
-    descricao: "Hachiware é um amigo fiel e divertido..."
-  },
-  {
-    nome: "Usagi",
-    img: "personagem3.jpg",
-    descricao: "Usagi é alegre, energético e sempre disposto a ajudar..."
+  const imagens = [
+    '',
+    'https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png',
+    'https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png'
+  ];
+
+  function abrirPopup(idx) {
+    document.getElementById('popup-img-src').src = imagens[idx];
+    document.getElementById('popup-bg').classList.add('active');
   }
-];
 
-function abrirPersonagem(index) {
-  document.getElementById("modalImagem").src = personagens[index].img;
-  document.getElementById("modalTitulo").innerText = personagens[index].nome;
-  document.getElementById("modalDescricao").innerText = personagens[index].descricao;
-  document.getElementById("modalPersonagem").style.display = "block";
-}
-
-function fecharPersonagem() {
-  document.getElementById("modalPersonagem").style.display = "none";
-}
-
-window.onclick = function(event) {
-  const modal = document.getElementById("modalPersonagem");
-  if (event.target === modal) {
-    modal.style.display = "none";
+  function fecharPopup(e) {
+    if (e.target.id === 'popup-bg' || e.target.classList.contains('popup-close')) {
+      document.getElementById('popup-bg').classList.remove('active');
+      document.getElementById('popup-img-src').src = '';
+    }
   }
-}
 </script>
 
 </body>
