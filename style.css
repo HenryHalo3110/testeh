@@ -271,8 +271,8 @@ body {
         }
         .popup-bg.active .popup-img img {
             transform: scale(1);
-            max-width: 84vw;
-            max-height: 84vh;
+            max-width: 80vw;
+            max-height: 80vh;
         }
         .popup-close {
             background: var(--vermelho);
