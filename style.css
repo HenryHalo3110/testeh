@@ -285,3 +285,65 @@ body {
             cursor: pointer;
             margin-bottom: 8px;
         }
+
+/* Grid de personagens */
+.personagens-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.personagem-card {
+  text-align: center;
+  cursor: pointer;
+}
+
+.personagem-card img {
+  width: 100%;
+  border-radius: 8px; /* quadradas com cantos levemente arredondados */
+  transition: transform 0.3s ease;
+}
+
+.personagem-card img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 50px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-conteudo {
+  background: #1c1d24;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.modal-esquerda img {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.modal-direita {
+  flex: 1;
+}
+
+.fechar {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 30px;
+  cursor: pointer;
+}
