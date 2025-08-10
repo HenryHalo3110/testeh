@@ -12,49 +12,41 @@
     <!-- Cabeçalho -->
     <header class="p-3">
         <div class="container d-flex align-items-center">
-            <!-- Imagem pequena -->
             <a href="#">
                 <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/105387059_BPw4M3Ykvnzuj7E.png" alt="Imagem pequena" class="small-img me-4" />
             </a>
 
-            <!-- Menu alinhado à direita -->
             <nav class="ms-auto" aria-label="Menu principal">
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link" href="#horror-circus">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#support-us">Support Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#art-gallery">Art Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Characters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#characters">Characters</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
                 </ul>
             </nav>
         </div>
-        <!-- Linha branca -->
         <hr class="divider" />
     </header>
 
     <!-- Conteúdo principal -->
     <main class="container text-center my-4" role="main">
-        <!-- Imagem grande -->
         <a href="#">
             <img src="https://i.pinimg.com/1200x/56/24/dc/5624dc46f817a3b0d03dfa546c9e1bcf.jpg" alt="Imagem grande" class="large-img" />
         </a>
     </main>
 
-    <!-- Sessão da sinopse com imagem fundo -->
+    <!-- Sessão da sinopse -->
     <section id="horror-circus" class="secao-horror-circus" tabindex="0" aria-label="Seção sinopse sobre Horror Circus">
         <div class="container position-relative">
-            <!-- Imagem de fundo centralizada -->
             <img 
                 src="https://i.pinimg.com/1200x/56/24/dc/5624dc46f817a3b0d03dfa546c9e1bcf.jpg" 
                 alt="" 
                 class="imagem-fundo" 
                 aria-hidden="true" 
             />
-
-            <!-- Conteúdo flexível: imagem pequena + texto -->
             <div class="d-flex align-items-center conteudo">
-                <!-- Imagem pequena à esquerda -->
                 <div class="imagem-pequena">
                     <img
                         src="https://f2.toyhou.se/file/f2-toyhou-se/images/105387059_BPw4M3Ykvnzuj7E.png"
@@ -62,8 +54,6 @@
                         loading="lazy"
                     />
                 </div>
-
-                <!-- Texto à direita -->
                 <div class="texto ms-4">
                     <h2>WHAT IS HORROR CIRCUS?</h2>
                     <p class="sinopse">
@@ -74,127 +64,102 @@
         </div>
     </section>
 
-<!-- Sessão Support Us -->
-<section id="support-us" class="secao-support-us text-center py-5" tabindex="0" aria-label="Seção Support Us">
-    <div class="container">
-        <h2 class="titulo-su">Support Us!</h2>
-        <p class="subtexto-su">Help us build Horror Circus!</p>
-        <a href="https://ko-fi.com/henryhalo" target="_blank" rel="noopener noreferrer" class="link-suporte">
-            <img src="https://cdn.ko-fi.com/cdn/kofi2.png?v=3" alt="Ko-fi Support Button" class="imagem-su" />
-        </a>
-        <p class="texto-final-su mt-4">
-            Your support helps us keep creating terrifying fun experiences. Every donation counts and means a lot!
-        </p>
-    </div>
-</section>
+    <!-- Sessão Support Us -->
+    <section id="support-us" class="secao-support-us text-center py-5">
+        <div class="container">
+            <h2 class="titulo-su">Support Us!</h2>
+            <p class="subtexto-su">Help us build Horror Circus!</p>
+            <a href="https://ko-fi.com/henryhalo" target="_blank" rel="noopener noreferrer" class="link-suporte">
+                <img src="https://cdn.ko-fi.com/cdn/kofi2.png?v=3" alt="Ko-fi Support Button" class="imagem-su" />
+            </a>
+            <p class="texto-final-su mt-4">
+                Your support helps us keep creating terrifying fun experiences. Every donation counts and means a lot!
+            </p>
+        </div>
+    </section>
 
-<section id="art-gallery" tabindex="0" aria-label="Galeria de arte">
-  <h2 class="titulo-galeria text-center pt-5">Art Gallery</h2>
-  <div class="container p-3 mt-3">
-    <div class="row justify-content-center">
-      <div class="col-md-4 mb-3" onclick="abrirPopup(1)">
-        <img src="https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png" alt="Imagem 1" class="gallery-img" data-index="0" />
+    <!-- Galeria -->
+    <section id="art-gallery" aria-label="Galeria de arte">
+      <h2 class="titulo-galeria text-center pt-5">Art Gallery</h2>
+      <div class="container p-3 mt-3">
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3" onclick="abrirPopup(1)">
+            <img src="https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png" alt="Imagem 1" class="gallery-img" />
+          </div>
+          <div class="col-md-4 mb-3" onclick="abrirPopup(2)">
+            <img src="https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png" alt="Imagem 2" class="gallery-img" />
+          </div>
+          <div class="col-md-4 mb-3" onclick="abrirPopup(3)">
+            <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101108566_YTPqmzgINHIKUHX.png" alt="Imagem 3" class="gallery-img" />
+          </div>
+        </div>
       </div>
-      <div class="col-md-4 mb-3" onclick="abrirPopup(2)">
-        <img src="https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png" alt="Imagem 2" class="gallery-img" data-index="1" />
-      </div>
-      <div class="col-md-4 mb-3" onclick="abrirPopup(3)">
-        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101108566_YTPqmzgINHIKUHX.png" alt="Imagem 3" class="gallery-img" data-index="2" />
-      </div>
-      <div class="col-md-4 mb-3" onclick="abrirPopup(4)">
-        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101109425_f6HFZvEpZdhIVvj.png" alt="Imagem 4" class="gallery-img" data-index="3" />
-      </div>
-      <div class="col-md-4 mb-3" onclick="abrirPopup(5)">
-        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/85169678_UUHJKmE135sEBGU.png?1726334863" alt="Imagem 5" class="gallery-img" data-index="4" />
-      </div>
-      <div class="col-md-4 mb-3" onclick="abrirPopup(6)">
-        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/80109278_OOaFL3CGFSXmAGf.png" alt="Imagem 6" class="gallery-img" data-index="5" />
-      </div>
-    </div>
-  </div>
-
-<div class="popup-bg" id="popup-bg" onclick="fecharPopup(event)">
-        <div class="popup-img" id="popup-img">
+      <div class="popup-bg" id="popup-bg" onclick="fecharPopup(event)">
+        <div class="popup-img">
             <button class="popup-close" onclick="fecharPopup(event)">&times;</button>
             <img id="popup-img-src" src="" alt="Imagem ampliada">
         </div>
-    </div>
-
-  <!-- Lightbox Modal -->
-  <div id="lightbox" class="lightbox" style="display:none;">
-    <button class="lightbox-close" aria-label="Fechar">&times;</button>
-    <button class="lightbox-prev" aria-label="Imagem anterior">&#10094;</button>
-    <img src="" alt="" class="lightbox-img" />
-    <button class="lightbox-next" aria-label="Próxima imagem">&#10095;</button>
-  </div>
-</section>
-
-<script>
-        const imagens = [
-            '',
-            'https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png',
-            'https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png',
-            'https://f2.toyhou.se/file/f2-toyhou-se/images/101108566_YTPqmzgINHIKUHX.png',
-            'https://f2.toyhou.se/file/f2-toyhou-se/images/101109425_f6HFZvEpZdhIVvj.png',
-            'https://f2.toyhou.se/file/f2-toyhou-se/images/85169678_UUHJKmE135sEBGU.png?1726334863',
-            'https://f2.toyhou.se/file/f2-toyhou-se/images/80109278_OOaFL3CGFSXmAGf.png',
-        ];
-        function abrirPopup(idx) {
-            document.getElementById('popup-img-src').src = imagens[idx];
-            document.getElementById('popup-bg').classList.add('active');
-        }
-        function fecharPopup(e) {
-            if (e.target.id === 'popup-bg' || e.target.classList.contains('popup-close')) {
-                document.getElementById('popup-bg').classList.remove('active');
-                document.getElementById('popup-img-src').src = '';
-            }
-        }
-</script>
-
-<!--- personagens ---!>
-<section id="characters" tabindex="0" aria-label="Galeria de personagens">
-  <h2 class="titulo-galeria text-center pt-5">Characters</h2>
-  <div class="container p-3 mt-3">
-    <div class="row justify-content-center">
-      <div class="col-md-3 mb-3" onclick="abrirPopup(1)">
-        <img src="https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png" 
-             alt="Imagem 1" class="gallery-img img-fluid rounded-3" data-index="0" />
       </div>
-      <div class="col-md-3 mb-3" onclick="abrirPopup(2)">
-        <img src="https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png" 
-             alt="Imagem 2" class="gallery-img img-fluid rounded-3" data-index="1" />
+    </section>
+
+    <!-- Characters -->
+    <section id="characters" aria-label="Galeria de personagens">
+      <h2 class="titulo-galeria text-center pt-5">Characters</h2>
+      <div class="container p-3 mt-3">
+        <div class="row justify-content-center">
+          <div class="col-md-3 mb-3" onclick="abrirPopupPersonagem(1)">
+            <img src="https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png" 
+                 alt="Personagem 1" 
+                 class="character-img" />
+          </div>
+          <div class="col-md-3 mb-3" onclick="abrirPopupPersonagem(2)">
+            <img src="https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png" 
+                 alt="Personagem 2" 
+                 class="character-img" />
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+      <div class="popup-bg" id="popup-bg-char" onclick="fecharPopupPersonagem(event)">
+        <div class="popup-img">
+          <button class="popup-close" onclick="fecharPopupPersonagem(event)">&times;</button>
+          <img id="popup-img-src-char" src="" alt="Imagem ampliada">
+        </div>
+      </div>
+    </section>
 
-  <!-- Popup -->
-  <div class="popup-bg" id="popup-bg" onclick="fecharPopup(event)">
-    <div class="popup-img" id="popup-img">
-      <button class="popup-close" onclick="fecharPopup(event)">&times;</button>
-      <img id="popup-img-src" src="" alt="Imagem ampliada">
-    </div>
-  </div>
-</section>
+    <script>
+      const imagens = [
+        '',
+        'https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png',
+        'https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png',
+        'https://f2.toyhou.se/file/f2-toyhou-se/images/101108566_YTPqmzgINHIKUHX.png'
+      ];
+      function abrirPopup(idx) {
+        document.getElementById('popup-img-src').src = imagens[idx];
+        document.getElementById('popup-bg').classList.add('active');
+      }
+      function fecharPopup(e) {
+        if (e.target.id === 'popup-bg' || e.target.classList.contains('popup-close')) {
+          document.getElementById('popup-bg').classList.remove('active');
+          document.getElementById('popup-img-src').src = '';
+        }
+      }
 
-<script>
-  const imagens = [
-    '',
-    'https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png',
-    'https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png'
-  ];
-
-  function abrirPopup(idx) {
-    document.getElementById('popup-img-src').src = imagens[idx];
-    document.getElementById('popup-bg').classList.add('active');
-  }
-
-  function fecharPopup(e) {
-    if (e.target.id === 'popup-bg' || e.target.classList.contains('popup-close')) {
-      document.getElementById('popup-bg').classList.remove('active');
-      document.getElementById('popup-img-src').src = '';
-    }
-  }
-</script>
-
+      const imagensPersonagens = [
+        '',
+        'https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png',
+        'https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png'
+      ];
+      function abrirPopupPersonagem(idx) {
+        document.getElementById('popup-img-src-char').src = imagensPersonagens[idx];
+        document.getElementById('popup-bg-char').classList.add('active');
+      }
+      function fecharPopupPersonagem(e) {
+        if (e.target.id === 'popup-bg-char' || e.target.classList.contains('popup-close')) {
+          document.getElementById('popup-bg-char').classList.remove('active');
+          document.getElementById('popup-img-src-char').src = '';
+        }
+      }
+    </script>
 </body>
 </html>
