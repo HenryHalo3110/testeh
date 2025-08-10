@@ -158,6 +158,70 @@
         }
 </script>
 
+<section id="art-gallery" tabindex="0" aria-label="Galeria de arte">
+  <h2 class="titulo-galeria text-center pt-5">Art Gallery</h2>
+  <div class="container p-3 mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-3" onclick="abrirPopup(1)">
+        <img src="https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png" alt="Imagem 1" class="gallery-img" data-index="0" />
+      </div>
+      <div class="col-md-4 mb-3" onclick="abrirPopup(2)">
+        <img src="https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png" alt="Imagem 2" class="gallery-img" data-index="1" />
+      </div>
+      <div class="col-md-4 mb-3" onclick="abrirPopup(3)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101108566_YTPqmzgINHIKUHX.png" alt="Imagem 3" class="gallery-img" data-index="2" />
+      </div>
+      <div class="col-md-4 mb-3" onclick="abrirPopup(4)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101109425_f6HFZvEpZdhIVvj.png" alt="Imagem 4" class="gallery-img" data-index="3" />
+      </div>
+      <div class="col-md-4 mb-3" onclick="abrirPopup(5)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/85169678_UUHJKmE135sEBGU.png?1726334863" alt="Imagem 5" class="gallery-img" data-index="4" />
+      </div>
+      <div class="col-md-4 mb-3" onclick="abrirPopup(6)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/80109278_OOaFL3CGFSXmAGf.png" alt="Imagem 6" class="gallery-img" data-index="5" />
+      </div>
+    </div>
+  </div>
+
+<div class="popup-bg" id="popup-bg" onclick="fecharPopup(event)">
+        <div class="popup-img" id="popup-img">
+            <button class="popup-close" onclick="fecharPopup(event)">&times;</button>
+            <img id="popup-img-src" src="" alt="Imagem ampliada">
+        </div>
+    </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" style="display:none;">
+    <button class="lightbox-close" aria-label="Fechar">&times;</button>
+    <button class="lightbox-prev" aria-label="Imagem anterior">&#10094;</button>
+    <img src="" alt="" class="lightbox-img" />
+    <button class="lightbox-next" aria-label="Próxima imagem">&#10095;</button>
+  </div>
+</section>
+
+<script>
+        const imagens = [
+            '',
+            'https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png',
+            'https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png',
+            'https://f2.toyhou.se/file/f2-toyhou-se/images/101108566_YTPqmzgINHIKUHX.png',
+            'https://f2.toyhou.se/file/f2-toyhou-se/images/101109425_f6HFZvEpZdhIVvj.png',
+            'https://f2.toyhou.se/file/f2-toyhou-se/images/85169678_UUHJKmE135sEBGU.png?1726334863',
+            'https://f2.toyhou.se/file/f2-toyhou-se/images/80109278_OOaFL3CGFSXmAGf.png',
+        ];
+        function abrirPopup(idx) {
+            document.getElementById('popup-img-src').src = imagens[idx];
+            document.getElementById('popup-bg').classList.add('active');
+        }
+        function fecharPopup(e) {
+            if (e.target.id === 'popup-bg' || e.target.classList.contains('popup-close')) {
+                document.getElementById('popup-bg').classList.remove('active');
+                document.getElementById('popup-img-src').src = '';
+            }
+        }
+</script>
+
+
 <section id="we-are-hiring">
   <div class="background-image"></div>
 
