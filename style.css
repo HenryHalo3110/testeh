@@ -260,7 +260,7 @@ body {
             transition: transform 0.25s;
         }
         .popup-bg.active .popup-img {
-            transform: scale(2);
+            transform: scale(1.2);
         }
         .popup-img img {
             max-width: 70vw;
