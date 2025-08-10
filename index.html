@@ -92,7 +92,7 @@
   <h2 class="titulo-galeria text-center pt-5">Art Gallery</h2>
   <div class="container p-3 mt-3">
     <div class="row justify-content-center">
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4 mb-3" onclick="abrirPopup(1)">
         <img src="https://storage.ko-fi.com/cdn/useruploads/post/5bb1e6c7-63e0-4a4d-bec1-45fc36abed72_1489_sem_titulo.png" alt="Imagem 1" class="gallery-img" data-index="0" />
       </div>
       <div class="col-md-4 mb-3">
@@ -128,6 +128,26 @@
             <img id="popup-img-src" src="" alt="Imagem ampliada">
         </div>
     </div>
+
+<script>
+        const imagens = [
+            '',
+            'img/imagem1.jpg',
+            'https://via.placeholder.com/600x400?text=Imagem+2',
+            'https://via.placeholder.com/600x400?text=Imagem+3',
+            'https://via.placeholder.com/600x400?text=Imagem+4'
+        ];
+        function abrirPopup(idx) {
+            document.getElementById('popup-img-src').src = imagens[idx];
+            document.getElementById('popup-bg').classList.add('active');
+        }
+        function fecharPopup(e) {
+            if (e.target.id === 'popup-bg' || e.target.classList.contains('popup-close')) {
+                document.getElementById('popup-bg').classList.remove('active');
+                document.getElementById('popup-img-src').src = '';
+            }
+        }
+</script>
 
 </body>
 </html>
