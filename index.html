@@ -151,5 +151,76 @@
         }
 </script>
 
+<!-- Seção Personagens -->
+<section id="characters">
+  <h2 class="titulo-galeria">CHARACTERS</h2>
+  <div class="personagens-grid">
+    <div class="personagem-card" onclick="abrirPersonagem(0)">
+      <img src="personagem1.jpg" alt="Devish">
+      <h3>Devish</h3>
+    </div>
+    <div class="personagem-card" onclick="abrirPersonagem(1)">
+      <img src="personagem2.jpg" alt="Vouliber">
+      <h3>Vouliber</h3>
+    </div>
+    <div class="personagem-card" onclick="abrirPersonagem(2)">
+      <img src="personagem3.jpg" alt="Mayhem">
+      <h3>Mayhem</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Personagens -->
+<div id="modalPersonagem" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar" onclick="fecharPersonagem()">&times;</span>
+    <div class="modal-esquerda">
+      <img id="https://f2.toyhou.se/file/f2-toyhou-se/images/80203018_OfueflQsHXa4WFy.png" src="" alt="">
+    </div>
+    <div class="modal-direita">
+      <h2 id="DEVISH (DEVIL-ON-WISH)!"></h2>
+      <p id="texto texto texto"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+const personagens = [
+  {
+    nome: "Devish",
+    img: "https://f2.toyhou.se/file/f2-toyhou-se/images/105407758_kkyUejMZU1H2Li3.png",
+    descricao: "textetextext"
+  },
+  {
+    nome: "Hachiware",
+    img: "personagem2.jpg",
+    descricao: "Hachiware é um amigo fiel e divertido..."
+  },
+  {
+    nome: "Usagi",
+    img: "personagem3.jpg",
+    descricao: "Usagi é alegre, energético e sempre disposto a ajudar..."
+  }
+];
+
+function abrirPersonagem(index) {
+  document.getElementById("modalImagem").src = personagens[index].img;
+  document.getElementById("modalTitulo").innerText = personagens[index].nome;
+  document.getElementById("modalDescricao").innerText = personagens[index].descricao;
+  document.getElementById("modalPersonagem").style.display = "block";
+}
+
+function fecharPersonagem() {
+  document.getElementById("modalPersonagem").style.display = "none";
+}
+
+window.onclick = function(event) {
+  const modal = document.getElementById("modalPersonagem");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
