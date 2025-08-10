@@ -113,6 +113,13 @@
     </div>
   </div>
 
+<div class="popup-bg" id="popup-bg" onclick="fecharPopup(event)">
+        <div class="popup-img" id="popup-img">
+            <button class="popup-close" onclick="fecharPopup(event)">&times;</button>
+            <img id="popup-img-src" src="" alt="Imagem ampliada">
+        </div>
+    </div>
+
   <!-- Lightbox Modal -->
   <div id="lightbox" class="lightbox" style="display:none;">
     <button class="lightbox-close" aria-label="Fechar">&times;</button>
@@ -121,13 +128,6 @@
     <button class="lightbox-next" aria-label="Próxima imagem">&#10095;</button>
   </div>
 </section>
-
-<div class="popup-bg" id="popup-bg" onclick="fecharPopup(event)">
-        <div class="popup-img" id="popup-img">
-            <button class="popup-close" onclick="fecharPopup(event)">&times;</button>
-            <img id="popup-img-src" src="" alt="Imagem ampliada">
-        </div>
-    </div>
 
 <script>
         const imagens = [
