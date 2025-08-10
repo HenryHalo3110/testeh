@@ -2,7 +2,7 @@ body {
     background-color: #1c1d24;
     color: #ffffff;
     margin: 0;
-    font-family: "Courier New", Courier, monospace; /* Fonte para textos */
+    font-family: "Courier New", Courier, monospace;
 }
 
 /* Imagem pequena no header */
@@ -20,7 +20,7 @@ body {
     padding: 8px 15px !important;
     font-weight: bold;
     text-align: center;
-    font-family: "Courier New", Courier, monospace; /* manter coerência */
+    font-family: "Courier New", Courier, monospace;
 }
 
 .nav-link:hover {
@@ -68,13 +68,16 @@ body {
 .conteudo {
     position: relative;
     z-index: 10;
-    gap: 1rem; /* menor espaço entre imagem e texto */
-    align-items: flex-start; /* Alinha ao topo */
+    gap: 2rem;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Imagem pequena à esquerda da seção - maior */
 .imagem-pequena img {
-    max-width: 280px; /* aumentado */
+    max-width: 280px;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
@@ -82,15 +85,13 @@ body {
 
 /* Texto da seção */
 .texto {
-    margin-top: 0;
+    flex: 1 1 320px;
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center;     
     text-align: center;
-    margin-left: 0; /* tira margem lateral extra */
-    padding-left: 0; /* tira padding lateral extra */
-    font-family: "Courier New", Courier, monospace; /* texto com Courier New */
+    font-family: "Courier New", Courier, monospace;
 }
 
 .texto h2 {
@@ -98,7 +99,7 @@ body {
     font-size: 2.8rem;
     margin-bottom: 1rem;
     color: white;
-    font-family: "Arial Black", Arial, sans-serif; /* títulos com Arial Black */
+    font-family: "Arial Black", Arial, sans-serif;
 }
 
 .texto .sinopse {
@@ -106,13 +107,12 @@ body {
     line-height: 1.6;
     font-size: 1.15rem;
     color: white;
-    text-align: center; 
     margin: 0 auto;     
 }
 
 /* Sessão Support Us */
 .secao-support-us {
-    background-color: #1c1e2a; /* Fundo escuro */
+    background-color: #1c1e2a;
     color: #fff;
     padding: 3rem 1rem;
     display: flex;
@@ -120,7 +120,7 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    font-family: "Courier New", Courier, monospace; /* texto com Courier New */
+    font-family: "Courier New", Courier, monospace;
 }
 
 .secao-support-us .titulo-su {
@@ -128,7 +128,7 @@ body {
     font-weight: 900;
     margin-bottom: 0.5rem;
     color: #fff;
-    font-family: "Arial Black", Arial, sans-serif; /* títulos com Arial Black */
+    font-family: "Arial Black", Arial, sans-serif;
 }
 
 .secao-support-us .subtexto-su {
@@ -163,385 +163,279 @@ body {
 
 /* Galeria */
 #art-gallery img.gallery-img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  transition: transform 0.3s ease;
-  cursor: pointer;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 #art-gallery img.gallery-img:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* Lightbox */
 .lightbox {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  flex-direction: column;
-  user-select: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+    user-select: none;
 }
 
 .lightbox-img {
-  max-width: 90vw;
-  max-height: 80vh;
-  border-radius: 10px;
-  box-shadow: 0 0 20px black;
-  margin: 0 50px;
-  object-fit: contain;
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+    margin: 0 50px;
+    object-fit: contain;
 }
 
 .lightbox-close,
 .lightbox-prev,
 .lightbox-next {
-  position: absolute;
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 3rem;
-  cursor: pointer;
-  user-select: none;
-  padding: 0 15px;
-  transition: color 0.2s ease;
+    position: absolute;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 15px;
+    transition: color 0.2s ease;
 }
 
 .lightbox-close {
-  top: 20px;
-  right: 30px;
-  font-size: 4rem;
+    top: 20px;
+    right: 30px;
+    font-size: 4rem;
 }
 
 .lightbox-close:hover,
 .lightbox-prev:hover,
 .lightbox-next:hover {
-  color: #ff4444;
+    color: #ff4444;
 }
 
 .lightbox-prev {
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
 }
 
 .lightbox-next {
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
 
 .popup-bg {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(20,20,20,0.92);
-            align-items: center;
-            justify-content: center;
-        }
-        .popup-bg.active {
-            display: flex;
-        }
-        .popup-img {
-            background: #1c1e2a;
-            border-radius: 10px;
-            padding: 16px;
-            max-width: 90vw;
-            max-height: 90vh;
-            box-shadow: 0 0 24px #000;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            transition: transform 0.25s;
-        }
-        .popup-bg.active .popup-img {
-            transform: scale(140%);
-        }
-        .popup-img img {
-            max-width: 50vw;
-            max-height: 50vh;
-            border-radius: 8px;
-            display: block;
-            transition: transform 0.25s, max-width 0.25s, max-height 0.25s;
-        }
-        .popup-bg.active .popup-img img {
-            transform: scale(1);
-            max-width: 70vw;
-            max-height: 70vh;
-        }
-        .popup-close {
-            background: var(--vermelho);
-            color: var(--branco);
-            border: none;
-            border-radius: 50%;
-            width: 32px;
-            height: 32px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            margin-bottom: 8px;
-        }
-
-/* Galeria */
-#art-gallery img.gallery-img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  transition: transform 0.3s ease;
-  cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(20,20,20,0.92);
+    align-items: center;
+    justify-content: center;
 }
 
-#art-gallery img.gallery-img:hover {
-  transform: scale(1.05);
+.popup-bg.active {
+    display: flex;
 }
 
-/* Lightbox */
-.lightbox {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  flex-direction: column;
-  user-select: none;
+.popup-img {
+    background: #1c1e2a;
+    border-radius: 10px;
+    padding: 16px;
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 0 24px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: transform 0.25s;
 }
 
-.lightbox-img {
-  max-width: 90vw;
-  max-height: 80vh;
-  border-radius: 10px;
-  box-shadow: 0 0 20px black;
-  margin: 0 50px;
-  object-fit: contain;
+.popup-bg.active .popup-img {
+    transform: scale(1.4);
 }
 
-.lightbox-close,
-.lightbox-prev,
-.lightbox-next {
-  position: absolute;
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 3rem;
-  cursor: pointer;
-  user-select: none;
-  padding: 0 15px;
-  transition: color 0.2s ease;
+.popup-img img {
+    max-width: 50vw;
+    max-height: 50vh;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.25s, max-width 0.25s, max-height 0.25s;
 }
 
-.lightbox-close {
-  top: 20px;
-  right: 30px;
-  font-size: 4rem;
+.popup-bg.active .popup-img img {
+    transform: scale(1);
+    max-width: 70vw;
+    max-height: 70vh;
 }
 
-.lightbox-close:hover,
-.lightbox-prev:hover,
-.lightbox-next:hover {
-  color: #ff4444;
+.popup-close {
+    background: #7b1717;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 8px;
 }
-
-.lightbox-prev {
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-}
-
-.lightbox-next {
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-}
-
-.popup-bg {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(20,20,20,0.92);
-            align-items: center;
-            justify-content: center;
-        }
-        .popup-bg.active {
-            display: flex;
-        }
-        .popup-img {
-            background: #1c1e2a;
-            border-radius: 10px;
-            padding: 16px;
-            max-width: 90vw;
-            max-height: 90vh;
-            box-shadow: 0 0 24px #000;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            transition: transform 0.25s;
-        }
-        .popup-bg.active .popup-img {
-            transform: scale(140%);
-        }
-        .popup-img img {
-            max-width: 50vw;
-            max-height: 50vh;
-            border-radius: 8px;
-            display: block;
-            transition: transform 0.25s, max-width 0.25s, max-height 0.25s;
-        }
-        .popup-bg.active .popup-img img {
-            transform: scale(1);
-            max-width: 70vw;
-            max-height: 70vh;
-        }
-        .popup-close {
-            background: var(--vermelho);
-            color: var(--branco);
-            border: none;
-            border-radius: 50%;
-            width: 32px;
-            height: 32px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            margin-bottom: 8px;
-        }
 
 /* SESSÃO ESTAMOS CONTRATANDO */
-
 #we-are-hiring {
-  position: relative;
-  text-align: center;
-  padding: 4rem 1rem 3rem;
-  color: white;
-  font-family: "Courier New", monospace;
-  overflow: hidden;
-  background-color: #1c1d24; /* fallback se imagem não carregar */
+    position: relative;
+    text-align: center;
+    padding: 4rem 1rem 3rem;
+    color: white;
+    font-family: "Courier New", monospace;
+    overflow: hidden;
+    background-color: #1c1d24;
 }
 
-/* Imagem de fundo */
 #we-are-hiring .background-image {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
-  filter: brightness(0.3);
-  z-index: 0;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    filter: brightness(0.3);
+    z-index: 0;
 }
 
-/* Caixa do formulário */
 .hiring-box {
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: rgba(20, 20, 30, 0.85);
-  padding: 2rem 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.8);
-  z-index: 1;
-  font-family: "Courier New", monospace;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(20, 20, 30, 0.85);
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+    z-index: 1;
+    font-family: "Courier New", monospace;
 }
 
-/* Título */
 .hiring-box h2 {
-  font-family: 'Arial Black', Arial, sans-serif;
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
 }
 
-/* Texto */
 .hiring-box p {
-  font-size: 0.95rem;
-  margin-bottom: 2rem;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
 }
 
-/* Formulário */
 .hiring-box form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .hiring-box input,
 .hiring-box textarea {
-  padding: 0.5rem;
-  font-family: 'Courier New', monospace;
-  border-radius: 5px;
-  border: none;
-  font-size: 1rem;
-  resize: vertical;
+    padding: 0.5rem;
+    font-family: 'Courier New', monospace;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    resize: vertical;
 }
 
-/* Botão enviar */
 .hiring-box button {
-  background-color: #3a3b4a;
-  color: white;
-  font-family: 'Arial Black', Arial, sans-serif;
-  padding: 0.7rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+    background-color: #3a3b4a;
+    color: white;
+    font-family: 'Arial Black', Arial, sans-serif;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
 }
 
 .hiring-box button:hover {
-  background-color: #56576b;
+    background-color: #56576b;
 }
 
 /* FOOTER */
 
 footer {
-  background-color: #121219;
-  color: white;
-  font-family: 'Courier New', monospace;
-  text-align: center;
-  padding: 1.5rem 1rem 2rem;
-  user-select: none;
+    background-color: #121219;
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding: 1.5rem 1rem 2rem;
+    user-select: none;
 }
 
-/* Copyright */
 footer p {
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
 }
 
 footer .follow-us {
-  font-weight: bold;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
-/* Links das redes sociais */
 .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-/* Cada botão social */
 .social-item {
-  background-color: #2a2a3a;
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+    background-color: #2a2a3a;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .social-item img {
-  width: 18px;
-  height: 18px;
+    width: 18px;
+    height: 18px;
 }
 
 .social-item:hover {
-  background-color: #444558;
+    background-color: #444558;
+}
+
+/* Responsividade para a seção Horror Circus */
+@media (max-width: 767px) {
+    .conteudo {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .imagem-pequena img {
+        max-width: 200px;
+    }
+
+    .texto h2 {
+        font-size: 2rem;
+    }
+
+    .texto .sinopse {
+        font-size: 1rem;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
 }
