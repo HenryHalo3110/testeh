@@ -575,7 +575,7 @@ footer .follow-us {
 /* Sessão pós-footer com 4 imagens */
 #post-footer-gallery {
   background-color: #121219; /* mesmo do footer */
-  width: 90vw;
+  width: 100vw;
   margin-left: calc(50% - 50vw); /* garante full-bleed mesmo dentro de containers */
   margin-right: calc(50% - 50vw);
 }
