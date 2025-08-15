@@ -571,3 +571,42 @@ footer .follow-us {
         padding: 0 1rem;
     }
 }
+
+/* Sessão pós-footer com 4 imagens */
+#post-footer-gallery {
+  background-color: #121219; /* mesmo do footer */
+  width: 100vw;
+  margin-left: calc(50% - 50vw); /* garante full-bleed mesmo dentro de containers */
+  margin-right: calc(50% - 50vw);
+}
+
+#post-footer-gallery .pf-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;             /* sem espaços entre as imagens */
+  width: 100%;
+}
+
+#post-footer-gallery img {
+  width: 100%;
+  height: 22vw;       /* altura proporcional à largura da viewport para “encaixar” a tela */
+  object-fit: cover;  /* garante corte bonito e preenchimento */
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  #post-footer-gallery img { height: 28vw; }
+}
+
+@media (max-width: 768px) {
+  #post-footer-gallery .pf-grid { grid-template-columns: repeat(2, 1fr); }
+  #post-footer-gallery img { height: 45vw; }
+}
+
+@media (max-width: 480px) {
+  #post-footer-gallery .pf-grid { grid-template-columns: 1fr; }
+  #post-footer-gallery img { height: 60vw; }
+}
