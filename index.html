@@ -258,5 +258,59 @@
   </div>
 </footer>
 
+
+<section id="characters" tabindex="0" aria-label="Characters">
+  <h2 class="titulo-galeria text-center pt-5">Characters</h2>
+  <div class="container p-3 mt-3">
+    <div class="row justify-content-center">
+      <div class="col-4 col-sm-3 col-md-2 mb-3" onclick="abrirPopupPersonagem(1)">
+        <img src="https://i.imgur.com/6088b93a.png" alt="Devish" class="character-img" />
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-3" onclick="abrirPopupPersonagem(2)">
+        <img src="https://storage.ko-fi.com/cdn/useruploads/display/c50d3062-d554-4ec5-bef7-83a0ce4aafdc_sketch-1747804611242.png" alt="Vouliber" class="character-img" />
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-3" onclick="abrirPopupPersonagem(3)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101108566_YTPqmzgINHIKUHX.png" alt="Mayhem" class="character-img" />
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-3" onclick="abrirPopupPersonagem(4)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101109425_f6HFZvEpZdhIVvj.png" alt="Xanthe" class="character-img" />
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-3" onclick="abrirPopupPersonagem(5)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/85169678_UUHJKmE135sEBGU.png" alt="Fantoccio" class="character-img" />
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-3" onclick="abrirPopupPersonagem(6)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/80109278_OOaFL3CGFSXmAGf.png" alt="Christopher" class="character-img" />
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-3" onclick="abrirPopupPersonagem(7)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101108566_YTPqmzgINHIKUHX.png" alt="Coda" class="character-img" />
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-3" onclick="abrirPopupPersonagem(8)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101109425_f6HFZvEpZdhIVvj.png" alt="Retro" class="character-img" />
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-3" onclick="abrirPopupPersonagem(9)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/85169678_UUHJKmE135sEBGU.png" alt="Staffo" class="character-img" />
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-3" onclick="abrirPopupPersonagem(10)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/80109278_OOaFL3CGFSXmAGf.png" alt="Cassy" class="character-img" />
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-3" onclick="abrirPopupPersonagem(11)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101108566_YTPqmzgINHIKUHX.png" alt="Razzle and Dazzle" class="character-img" />
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-3" onclick="abrirPopupPersonagem(12)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/101109425_f6HFZvEpZdhIVvj.png" alt="Murmur" class="character-img" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Pop-up de personagens -->
+  <div class="popup-bg" id="popup-personagem" onclick="fecharPopupPersonagem(event)">
+    <div class="popup-img" id="popup-personagem-box">
+      <button class="popup-close" onclick="fecharPopupPersonagem(event)">&times;</button>
+      <img id="popup-personagem-src" src="" alt="Personagem ampliado">
+    </div>
+  </div>
+</section>
+
+
 </body>
 </html>
