@@ -136,43 +136,53 @@
   </div>
 </section>
 
-<script>
-        const imagens = [
-            '',
-            'https://64.media.tumblr.com/0bbbdd02f8d6e429633c77c201ef8c6c/61ef0bf441f92bf3-9a/s540x810/2c50b71f507b638898980a8422b4e35db991600a.pnj',
-            'https://f2.toyhou.se/file/f2-toyhou-se/images/106045469_kb6svsvCgAS5LwH.png',
-            'https://f2.toyhou.se/file/f2-toyhou-se/images/106045486_bM4YfeTIbd6fKOW.png',
-            'https://f2.toyhou.se/file/f2-toyhou-se/images/106045527_IelLpdaQKHAB6UE.png',
-            'https://f2.toyhou.se/file/f2-toyhou-se/images/106045533_H1wTZv1D5FGflRO.png',
-            'https://f2.toyhou.se/file/f2-toyhou-se/images/106045539_1dr6V6QzQ39zdGQ.png',
-        ];
-        function abrirPopup(idx) {
-            document.getElementById('popup-img-src').src = imagens[idx];
-            document.getElementById('popup-bg').classList.add('active');
-        }
-        function fecharPopup(e) {
-            if (e.target.id === 'popup-bg' || e.target.classList.contains('popup-close')) {
-                document.getElementById('popup-bg').classList.remove('active');
-                document.getElementById('popup-img-src').src = '';
-            }
-        }
-</script>
-
 <section id="characters">
   <h2 class="titulo-galeria text-center pt-5">Characters</h2>
   <div class="container p-3 mt-3">
-    <div class="row justify-content-center">
-      <div class="col-md-4 mb-3" onclick="abrirPopup(1)">
+    <div class="row justify-content-center g-2"> <!-- g-2 diminui o espaçamento entre colunas -->
+
+      <!-- Linha 1 -->
+      <div class="col-6 col-md-3" onclick="abrirPopup(1)">
         <img src="https://images.artfight.net/character/th_v40iu30CqWTKt6vlk79UGySHxPaBeT0rNNq8NpqrftqL9YwCwoytbRqaBQw5.png?t=1748071039" alt="Imagem 1" class="gallery-img img-fluid" data-index="0" />
       </div>
-      <div class="col-md-4 mb-3" onclick="abrirPopup(2)">
+      <div class="col-6 col-md-3" onclick="abrirPopup(2)">
         <img src="https://images.artfight.net/character/th_sdZ3vPVyuDsWvmZbnwHuLsCwqGif1tDDOfR4kwTUahYrFAc96ykihhMPYqgM.png?t=1748070727" alt="Imagem 2" class="gallery-img img-fluid" data-index="1" />
       </div>
-      <div class="col-md-4 mb-3" onclick="abrirPopup(3)">
+      <div class="col-6 col-md-3" onclick="abrirPopup(3)">
         <img src="https://images.artfight.net/character/th_sVu7Ah8oVYQyABb7nk1w7tVep4nA3N2R3HfzdqcfHQw0fy5JawQxG8BXDaBO.png?t=1748072095" alt="Imagem 3" class="gallery-img img-fluid" data-index="2" />
       </div>
-      <div class="col-md-4 mb-3" onclick="abrirPopup(4)">
+      <div class="col-6 col-md-3" onclick="abrirPopup(4)">
         <img src="https://images.artfight.net/character/th_wltwH7QjOaTu1ZDCiVVQ7RLbrXJ4rr8kaOtfhatFBnKigKsl6Hs5jxq8xr7V.png?t=1748072976" alt="Imagem 4" class="gallery-img img-fluid" data-index="3" />
+      </div>
+
+      <!-- Linha 2 -->
+      <div class="col-6 col-md-3" onclick="abrirPopup(5)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/106046329_U5foTRvUNWBrqQ1.png" alt="Imagem 5" class="gallery-img img-fluid" data-index="4" />
+      </div>
+      <div class="col-6 col-md-3" onclick="abrirPopup(6)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/106046338_6vJaGebMpDt6ElY.png" alt="Imagem 6" class="gallery-img img-fluid" data-index="5" />
+      </div>
+      <div class="col-6 col-md-3" onclick="abrirPopup(7)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/106046348_CyX0B6FY69h9jWD.png" alt="Imagem 7" class="gallery-img img-fluid" data-index="6" />
+      </div>
+      <div class="col-6 col-md-3" onclick="abrirPopup(8)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/106046374_ubUIBCBcxCyhqe6.png?1755810614" alt="Imagem 8" class="gallery-img img-fluid" data-index="7" />
+      </div>
+
+      <!-- Linha 3 -->
+      <div class="col-6 col-md-3" onclick="abrirPopup(9)">
+        <img src="https://64.media.tumblr.com/0bbbdd02f8d6e429633c77c201ef8c6c/61ef0bf441f92bf3-9a/s540x810/2c50b71f507b638898980a8422b4e35db991600a.pnj" alt="Imagem 9" class="gallery-img img-fluid" data-index="8" />
+      </div>
+      <div class="col-6 col-md-3" onclick="abrirPopup(10)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/106045469_kb6svsvCgAS5LwH.png" alt="Imagem 10" class="gallery-img img-fluid" data-index="9" />
+      </div>
+      <div class="col-6 col-md-3" onclick="abrirPopup(11)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/106045486_bM4YfeTIbd6fKOW.png" alt="Imagem 11" class="gallery-img img-fluid" data-index="10" />
+      </div>
+      <div class="col-6 col-md-3" onclick="abrirPopup(12)">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/106045527_IelLpdaQKHAB6UE.png" alt="Imagem 12" class="gallery-img img-fluid" data-index="11" />
+      </div>
+
     </div>
   </div>
 
