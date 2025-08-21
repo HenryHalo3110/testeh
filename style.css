@@ -581,3 +581,62 @@ footer .follow-us {
         padding: 0 1rem;
     }
 }
+
+/* Botão de acessibilidade fixo no canto inferior esquerdo */
+#botao-acessibilidade {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #000;  /* Preto */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+}
+
+/* Rotação quando clicado */
+.rotacao-botao {
+  transform: rotate(90deg);
+}
+
+/* Lista de opções */
+.lista-acessibilidade {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  background-color: #111;
+  border-radius: 12px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 9998;
+}
+
+.lista-acessibilidade.apresenta-lista {
+  display: flex;
+}
+
+.lista-acessibilidade button {
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.lista-acessibilidade button:hover {
+  background-color: #444;
+}
+
+/* Contraste alto */
+.alto-contraste {
+  background-color: #000 !important;
+  color: #fff !important;
+}
