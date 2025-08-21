@@ -294,7 +294,7 @@ body {
 
 /* Seção Characters */
 #characters img.gallery-img {
-    width: 60%;          /* deixa menor que 100% para dar espaço */
+    width: 65%;          /* deixa menor que 100% para dar espaço */
     margin: 0 auto;      /* centraliza dentro da coluna */
     display: block;
     object-fit: cover;
