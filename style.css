@@ -581,12 +581,14 @@ footer .follow-us {
 
 /* nova sessao personagens */
 
+/* Personagens */
 .character-img {
     width: 100%;
-    max-width: 120px; /* ícones menores */
+    max-width: 100px; /* ícones menores */
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    margin-bottom: 4px; /* menos espaço vertical */
 }
 
 .character-img:hover {
@@ -630,3 +632,4 @@ footer .follow-us {
     border: none;
     cursor: pointer;
 }
+
