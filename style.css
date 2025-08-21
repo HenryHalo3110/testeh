@@ -142,7 +142,7 @@ body {
 }
 
 .secao-support-us .imagem-su {
-    max-width: 200px;
+    max-width: 250px;
     width: 100%;
     border-radius: 12px;
     cursor: pointer;
@@ -150,7 +150,7 @@ body {
 }
 
 .secao-support-us .imagem-su:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .secao-support-us .texto-final-su {
