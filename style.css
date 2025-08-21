@@ -292,9 +292,11 @@ body {
     margin-bottom: 8px;
 }
 
-/* personagens */
-#art-gallery img.gallery-img {
-    width: 100%;
+/* Seção Characters */
+#characters img.gallery-img {
+    width: 90%;          /* deixa menor que 100% para dar espaço */
+    margin: 0 auto;      /* centraliza dentro da coluna */
+    display: block;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
@@ -302,9 +304,10 @@ body {
     cursor: pointer;
 }
 
-#art-gallery img.gallery-img:hover {
+#characters img.gallery-img:hover {
     transform: scale(1.05);
 }
+
 
 /* Lightbox */
 .lightbox {
